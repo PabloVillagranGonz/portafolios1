@@ -1,7 +1,19 @@
 # Portfolio
 
 ### Espectativas antes de aprender POO:
+Mis espectativas del temario eran saber manejar bien la programación 
+orientada a objetos y asi de esta manera mejorar a la hora de programar.
+
+Tener un buen conocimiento sobre este tema te ayuda a la hora de mejorar
+una aplicación.
+Es mas sencillo cambiar o modificar el codigo con esta orientación.
 ### Cosas aprendidas en las dos unidades:
+
+- Saber asociar entre clases
+- Notación UML
+- Relaciones: composición y agregación
+
+
 
 Tambien una ayuda muy buena es la pagina web que tiene jorge
 ya que hay apuntes sobre lo que damos:
@@ -64,7 +76,7 @@ public class CocheVolador extends Coche{
 * Y para finalizar, crearemos la App.
 ```java
 public class AppCoche {
-    public static void main(String[] args) {
+    public static void main (String[] args) {
         Coche c1 = new Coche(40);
         CocheVolador v1 = new CocheVolador(50);
 
