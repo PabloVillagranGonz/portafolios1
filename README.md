@@ -5,14 +5,16 @@ Mis espectativas del temario eran saber manejar bien la programación
 orientada a objetos y asi de esta manera mejorar a la hora de programar.
 
 Tener un buen conocimiento sobre este tema te ayuda a la hora de mejorar
-una aplicación.
-Es mas sencillo cambiar o modificar el codigo con esta orientación.
+una aplicación. Es mas sencillo cambiar o modificar el codigo con esta orientación.
+
+Con los conocimientos adquiridos tenemos gran una gran parte ya hecha, ahora
+hace falta practicar y zanjarlos.
+
 ### Cosas aprendidas en las dos unidades:
 
-- Saber asociar entre clases
+- Asociación entre clases
 - Notación UML
 - Relaciones: composición y agregación
-
 
 
 Tambien una ayuda muy buena es la pagina web que tiene jorge
@@ -109,5 +111,97 @@ public class AppCoche {
 ```
 
 2. Ejercicio 2:
+```java
+public class Cuadrado implements Escribible, Dibujable{
+
+    public Punto punto;
+    public double lado;
+    public Cuadrado (Punto punto, double lado){
+        this.punto = punto;
+        this.lado = lado;
+    }
+
+    @Override
+    public void escribir() {
+        System.out.println("Coordenadas de la esquina izquierda: " + this.punto.x + ", " +
+                            this.punto.y + ", tamaño del lado " + this.lado);
+    }
+    @Override
+    public void dibujar() {
+        for (int i = 1; i <= lado ; i++) {
+            for (int j = 1; j <= lado ; j++) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
+}
+```
+
+```java
+public class Punto implements Escribible {
+    public double x;
+    public double y;
+    public Punto (double x, double y){
+        this.x = x;
+        this.y = y;
+    }
+    public Punto(){
+        this(0,0);
+    }
+    public void cambiar(double x, double y){
+        this.x = x;
+        this.y = y;
+    }
+
+    @Override
+    public void escribir() {
+        System.out.println("(" + x + (", ") + y + (")"));
+    }
+}
+```
+
+```java
+public interface Escribible {
+    void escribir();
+
+}
+``` 
+
+```java
+public interface Dibujable {
+    public void dibujar();
+}
+```
+
+```java
+public class App {
+    public static void main(String[] args) {
+        Punto p = new Punto(5, 10);
+        Punto q = new Punto(-4, 9);
+        Cuadrado c = new Cuadrado(p, 10);
+
+        Escribible e;
+        e = p;
+        e.escribir();
+        e = q;
+        e.escribir();
+        e = c;
+        e.escribir();
+        c.dibujar();
+
+        Escribible [] array = new Escribible[4];
+        array[0]=p;
+        array[1]=q;
+        array[2]=c;
+        array[3]= new Cuadrado(new Punto(3,4),20);
+        for (Escribible esc: array) {
+            esc.escribir();
+        }
+
+    }
+}
+```
+
 
 ### Conclusiones
