@@ -1,13 +1,13 @@
 # Portfolio
 
-![Imagen portfolio](C:\Users\alumnoDAM\Downloads\descarga.png)
+![GitHub-logo.png](GitHub-logo.png)
 
 ### Espectativas antes de aprender POO:
 Mis espectativas del temario eran saber manejar bien la programación 
 orientada a objetos y asi de esta manera mejorar a la hora de programar.
 
-Tener un buen conocimiento sobre este tema te ayuda a la hora de mejorar
-una aplicación. Es mas sencillo cambiar o modificar el codigo con esta orientación.
+Tener un buen conocimiento sobre este tema te ayuda a mejorar una aplicación ya que es 
+más sencillo cambiar o modificar el codigo con esta orientación.
 
 Con los conocimientos adquiridos tenemos gran una gran parte ya hecha, ahora
 hace falta practicar y zanjarlos.
@@ -18,7 +18,7 @@ hace falta practicar y zanjarlos.
 - Propiedades de la POO
 - This
 - Paso por valor o referencia
-- Metodos get y set
+- Métodos get y set
 - Constructores
 - Relaciones: composición y agregación
 - Notación UML
@@ -28,12 +28,17 @@ hace falta practicar y zanjarlos.
 - Metodo equals
 
 
-Tambien una ayuda muy buena es la pagina web que tiene jorge
+También una ayuda muy buena es la página web que tiene Jorge,
 ya que hay apuntes sobre lo que damos:
 
-##### [Apuntes Jorge Sanzhez](https://jorgesanchez.net/gbd)
+##### [Apuntes Jorge Sanzhez](https://jorgesanchez.net/java)
 
-### Ejercicios mas importantes:  
+### Ejercicios mas importantes: 
+
+He escogido este primer ejercicio ya que es bastante sencillo de entender y trabaja con las herencias,
+toca distintas reglas de la visibilidad, y utilizamos la palabra super.
+Es un ejemplo muy completo y sencillo de entender.
+
 1. Ejercicio 1:
 
 * En esta primera parte creamos la clase Coche.
@@ -122,7 +127,12 @@ public class AppCoche {
 
 ```
 
+En este segundo ejercicio hacemos ejemplo de implementación, interfaz... Un ejercicio que requiere
+un poco más de nivel.
+
 2. Ejercicio 2:
+
+* Creamos la clase Cuadrado:
 ```java
 public class Cuadrado implements Escribible, Dibujable{
 
@@ -150,6 +160,7 @@ public class Cuadrado implements Escribible, Dibujable{
 }
 ```
 
+* Seguidamente creamos la clase Punto:
 ```java
 public class Punto implements Escribible {
     public double x;
@@ -173,6 +184,7 @@ public class Punto implements Escribible {
 }
 ```
 
+* Después la clase Escribible:
 ```java
 public interface Escribible {
     void escribir();
@@ -180,12 +192,14 @@ public interface Escribible {
 }
 ``` 
 
+* Seguidamente la de Dibujable:
 ```java
 public interface Dibujable {
     public void dibujar();
 }
 ```
 
+* Y la aplicación, para comprobar si todo es correcto:
 ```java
 public class App {
     public static void main(String[] args) {
@@ -215,7 +229,6 @@ public class App {
 }
 ```
 
-
 ### Conclusiones
 
 Hemos aprendido a saber utilizar los objetos y las clases, las propiedades
@@ -234,6 +247,6 @@ de entender ya que no entendia bien para lo que servía.
 La utilidad que veo es que gracias a esto podemos tener un código reutilizable,
 organizado y muy facil de mantener. 
 
-Permitiendo trabajar en equipo, la facilidad a la hora de tener y 
+Permitiendo trabajar en equipo, la facilidad a la hora de tener y de 
 corregir errores, y nos permite construir sistemas mas complejos y 
 de forma mas sencilla y organizada.
