@@ -1,5 +1,7 @@
 # Portfolio
 
+![Imagen portfolio](C:\Users\alumnoDAM\Downloads\descarga.png)
+
 ### Espectativas antes de aprender POO:
 Mis espectativas del temario eran saber manejar bien la programación 
 orientada a objetos y asi de esta manera mejorar a la hora de programar.
@@ -13,12 +15,22 @@ hace falta practicar y zanjarlos.
 ### Cosas aprendidas en las dos unidades:
 
 - Asociación entre clases
-- Notación UML
+- Propiedades de la POO
+- This
+- Paso por valor o referencia
+- Metodos get y set
+- Constructores
 - Relaciones: composición y agregación
+- Notación UML
+- Herencia y reglas de  visibilidad
+- Clases abstractas
+- Clase object
+- Metodo equals
 
 
 Tambien una ayuda muy buena es la pagina web que tiene jorge
 ya que hay apuntes sobre lo que damos:
+
 ##### [Apuntes Jorge Sanzhez](https://jorgesanchez.net/gbd)
 
 ### Ejercicios mas importantes:  
@@ -205,3 +217,23 @@ public class App {
 
 
 ### Conclusiones
+
+Hemos aprendido a saber utilizar los objetos y las clases, las propiedades
+de la programación orientada a objetos, todos los metodos y constructores, 
+las relaciones y la herencia.
+
+Lo que mas me ha gustado han sido las interfaces, ya que son sencillas de crear
+basta que no hace falta implementar metodos.
+Es una clase abstracta y solo sirve para definir como tiene que funcionar
+una clase.
+
+Lo que menos me ha gustado, o me ha costado más de entender, fueron las
+relaciones de agregación y composición y los métodos estáticos. Me costo
+de entender ya que no entendia bien para lo que servía.
+
+La utilidad que veo es que gracias a esto podemos tener un código reutilizable,
+organizado y muy facil de mantener. 
+
+Permitiendo trabajar en equipo, la facilidad a la hora de tener y 
+corregir errores, y nos permite construir sistemas mas complejos y 
+de forma mas sencilla y organizada.
